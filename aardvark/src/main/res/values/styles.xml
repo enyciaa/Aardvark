@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToastStyle">
+        <item name="android:padding">@dimen/toast_horizontal_padding</item>
+        <item name="android:background">?android:colorAccent</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+</resources>

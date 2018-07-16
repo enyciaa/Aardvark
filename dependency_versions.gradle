@@ -1,0 +1,35 @@
+ext {
+    // Library Version
+    appVersionCode = 001000000
+    appVersionNumber = '1.0.0'
+
+    // Android
+    minSdkVersionSet = '21'
+    targetSdkVersionSet = '27'
+    compileSdkVersionSet = 27
+    buildToolsVersionSet = '27.0.3'
+    androidSupportVersion = '27.1.1'
+
+    // Plugins
+    crashlyticsPluginVersion = '1.25.1'
+    playServicesPluginVersion = '3.2.0'
+    gradlePluginVersion = '3.1.2'
+
+    // Personal libraries
+    jerboaVersion = "1.0.0"
+
+    //Kotlin
+    kotlinVersion = '1.2.41'
+
+    //Android code libraries
+    threeTenVersion = '1.0.5'
+    circleImageViewVersion = '2.2.0'
+    crashlyticsVersion = '2.9.4'
+    firebaseCore = '16.0.1'
+    daggerVersion = '2.15'
+
+    //Android testing libraries
+    kluentVersion = '1.14'
+    junitVersion = '4.12'
+    mockkVersion = '1.7.17'
+}

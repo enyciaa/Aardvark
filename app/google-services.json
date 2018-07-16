@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "324735787875",
+    "firebase_url": "https://turtle-a1fc6.firebaseio.com",
+    "project_id": "turtle-a1fc6",
+    "storage_bucket": "turtle-a1fc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324735787875:android:979f848e37222fed",
+        "android_client_info": {
+          "package_name": "com.boundless.aardvark.samples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324735787875-009ob8ngm38kvscki10071jb3iacef8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiSLawhKgSZ_jdPS9nHL-2sP6d9JeJ_uM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

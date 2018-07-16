@@ -1,0 +1,36 @@
+buildscript {
+    apply from: 'dependency_versions.gradle'
+
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${gradlePluginVersion}"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+        classpath "io.fabric.tools:gradle:${crashlyticsPluginVersion}"
+        classpath "com.google.gms:google-services:${playServicesPluginVersion}"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+            force "com.android.support:support-v4:${androidSupportVersion}"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

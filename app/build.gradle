@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion compileSdkVersionSet
+    buildToolsVersion buildToolsVersionSet
+
+    defaultConfig {
+        applicationId "com.boundless.aardvark.samples"
+        minSdkVersion minSdkVersionSet
+        targetSdkVersion targetSdkVersionSet
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFile 'proguard/proguard-picasso.pro'
+            proguardFile 'proguard/proguard-retrofit.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation project(':aardvark')
+    implementation "com.github.enyciaa:Jerboa:${jerboaVersion}"
+
+    implementation "com.android.support:appcompat-v7:${androidSupportVersion}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
+    kapt "com.android.databinding:compiler:${gradlePluginVersion}"
+
+    // For some reason
+    // The google services plugin defualts to firebase-core 11.4.2
+    // if there are no play services for firebase imports in app
+    implementation "com.google.firebase:firebase-core:${firebaseCore}"
+}
+
+apply plugin: 'com.google.gms.google-services'

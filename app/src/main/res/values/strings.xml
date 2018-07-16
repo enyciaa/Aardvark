@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aardvark</string>
+
+    <string name="resource_provider_example_string">String</string>
+    <string-array name="resource_provider_example_array">
+        <item>"Item 1"</item>
+        <item>"Item 2"</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ToastStyle" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+        <attr name="android:padding" />
+    </declare-styleable>
+
+</resources>
