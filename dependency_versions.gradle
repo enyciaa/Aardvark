@@ -1,8 +1,4 @@
 ext {
-    // Library Version
-    appVersionCode = 001000000
-    appVersionNumber = '1.0.0'
-
     // Android
     minSdkVersionSet = '21'
     targetSdkVersionSet = '27'
@@ -16,7 +12,7 @@ ext {
     gradlePluginVersion = '3.1.2'
 
     // Personal libraries
-    jerboaVersion = "1.0.0"
+    jerboaVersion = "1.1.0"
 
     //Kotlin
     kotlinVersion = '1.2.41'

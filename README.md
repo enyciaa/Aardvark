@@ -81,7 +81,9 @@ Includes:
 
 ## Views
 Simple self contained custom views
-- **Recycler Item decorations**
+- **Recycler - BottomSpaceDecorator**
+- **Recycler - TopSpaceDecorator**
+- **Recycler - ItemSpacingDecorator**
 - **CircularImageView**
 - **NonSwipeViewPager**
 - **TouchDisabableFrameLayout**

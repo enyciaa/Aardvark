@@ -47,6 +47,18 @@ object ViewDataBindingAdapter {
   }
 
   @JvmStatic
+  @BindingAdapter("isVisible")
+  fun isVisible(view: View, isVisible: Boolean) {
+    val newVisibility = if (isVisible)
+      View.VISIBLE
+    else
+      View.INVISIBLE
+
+    if (view.visibility != newVisibility)
+      view.visibility = newVisibility
+  }
+
+  @JvmStatic
   @BindingAdapter("android:layout_marginStart")
   fun setMarginStart(view: View, startMargin: Float) {
     view.setMarginStart(startMargin.toInt())
