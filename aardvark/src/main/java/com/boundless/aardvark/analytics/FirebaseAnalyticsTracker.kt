@@ -38,19 +38,19 @@ class FirebaseAnalyticsTracker(context: Context) : AnalyticsTracker {
 
   override fun screen(activity: Activity, screenName: String) {
     firebaseAnalytics.setCurrentScreen(activity, screenName, null)
-    Crashlytics.log(1, "Screen", screenName)
+    Crashlytics.log("$screenName Screen")
   }
 
   override fun event(tag: String) {
     firebaseAnalytics.logEvent(transformTagForFirebase(tag), null)
-    Crashlytics.log(1, "Event", tag)
+    Crashlytics.log(tag)
   }
 
   override fun event(tag: String, property: String, propertyValue: String) {
     val params = Bundle()
     params.putString(transformTagForFirebase(property), propertyValue)
     firebaseAnalytics.logEvent(transformTagForFirebase(tag), params)
-    Crashlytics.log(1, "Event", tag)
+    Crashlytics.log("$tag $property $propertyValue")
   }
 
   override fun event(tag: String, property: String, propertyValue: String, propertyTwo: String, propertyTwoValue: String) {
@@ -58,7 +58,7 @@ class FirebaseAnalyticsTracker(context: Context) : AnalyticsTracker {
     params.putString(transformTagForFirebase(property), propertyValue)
     params.putString(transformTagForFirebase(propertyTwo), propertyTwoValue)
     firebaseAnalytics.logEvent(transformTagForFirebase(tag), params)
-    Crashlytics.log(1, "Event", tag)
+    Crashlytics.log("$tag $property $propertyValue $propertyTwo $propertyTwoValue")
   }
 
   override fun purchase(price: Double, currencyShortCode: String, itemName: String) {
@@ -67,7 +67,7 @@ class FirebaseAnalyticsTracker(context: Context) : AnalyticsTracker {
     params.putString(transformTagForFirebase("price"), price.toString())
     params.putString(transformTagForFirebase("currency"), currencyShortCode)
     firebaseAnalytics.logEvent(transformTagForFirebase("purchase"), params)
-    Crashlytics.log(1, "Event", "Purchase")
+    Crashlytics.log("Purchase $itemName")
   }
 
   override fun setUserProperty(propertyName: String, value: String) {
