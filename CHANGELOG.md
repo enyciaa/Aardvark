@@ -10,3 +10,6 @@ Code from Rising tides prototype v2
 # 1.2.0
 - Improve logs in firebase
 - Only do firebase logging to firebase (not to logcat)
+
+# 1.2.1
+- Makes platform classes private functions protected to allow extension in subprojects
