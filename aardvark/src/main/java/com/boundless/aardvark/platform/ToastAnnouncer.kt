@@ -40,7 +40,7 @@ open class ToastAnnouncer(
     toast = null
   }
 
-  private fun styleToast() {
+  protected fun styleToast() {
     if (toast != null) {
       fetchStyle()
       styleBackground()
@@ -48,7 +48,7 @@ open class ToastAnnouncer(
     }
   }
 
-  private fun fetchStyle() {
+  protected fun fetchStyle() {
     if (textColor != null && backgroundColor != null && horizontalPadding != null)
       return
 
@@ -65,7 +65,7 @@ open class ToastAnnouncer(
     ta.recycle()
   }
 
-  private fun styleBackground() {
+  protected fun styleBackground() {
     val view = toast?.view
     val backgroundDrawable = context.getDrawableCompat(R.drawable.toast_background)
     if (context.isGreaterThanOrEqualToLollipop()) {
@@ -75,7 +75,7 @@ open class ToastAnnouncer(
     toast?.view = view
   }
 
-  private fun styleTextView() {
+  protected fun styleTextView() {
     val textView = toast?.view?.findViewById<View>(android.R.id.message) as TextView
     horizontalPadding?.let { textView.setPadding(it, 0, it, 0) }
     textColor?.let { textView.setTextColor(it) }

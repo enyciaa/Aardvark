@@ -78,14 +78,14 @@ open class TimeWrapperImpl(
   override fun getDayOfMonth(timeMs: Long) =
       getZonedDateTimeFromEpoch(timeMs).dayOfMonth
 
-  private fun areSameDayOfYear(zonedTimeOne: ZonedDateTime, zonedTimeTwo: ZonedDateTime) =
+  protected fun areSameDayOfYear(zonedTimeOne: ZonedDateTime, zonedTimeTwo: ZonedDateTime) =
       zonedTimeOne.dayOfYear == zonedTimeTwo.dayOfYear
 
-  private fun areSameYear(zonedTimeOne: ZonedDateTime, zonedTimeTwo: ZonedDateTime): Boolean =
+  protected fun areSameYear(zonedTimeOne: ZonedDateTime, zonedTimeTwo: ZonedDateTime): Boolean =
       zonedTimeOne.year == zonedTimeTwo.year
 
-  private fun getZonedDateTimeFromEpoch(epochMs: Long): ZonedDateTime =
+  protected fun getZonedDateTimeFromEpoch(epochMs: Long): ZonedDateTime =
       ZonedDateTime.ofInstant(Instant.ofEpochMilli(epochMs), getTimeZone())
 
-  private fun getTimeZone(): ZoneId = ZoneId.systemDefault()
+  protected fun getTimeZone(): ZoneId = ZoneId.systemDefault()
 }
