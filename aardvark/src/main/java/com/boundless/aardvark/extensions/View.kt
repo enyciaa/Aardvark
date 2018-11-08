@@ -2,8 +2,8 @@ package com.boundless.aardvark.extensions
 
 import android.app.Activity
 import android.content.Context
-import android.support.annotation.StyleRes
-import android.support.v7.view.ContextThemeWrapper
+import androidx.annotation.StyleRes
+import androidx.appcompat.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewTreeObserver

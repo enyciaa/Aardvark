@@ -2,9 +2,9 @@ package com.boundless.aardvark.databinding
 
 import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
-import android.databinding.BindingAdapter
+import androidx.databinding.BindingAdapter
 import android.graphics.drawable.ColorDrawable
-import android.support.annotation.ColorInt
+import androidx.annotation.ColorInt
 import android.view.View
 import com.boundless.aardvark.entities.Visibility
 import com.boundless.aardvark.extensions.setMarginEnd

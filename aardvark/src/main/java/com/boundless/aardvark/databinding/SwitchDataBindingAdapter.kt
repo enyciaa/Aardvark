@@ -1,9 +1,9 @@
 package com.boundless.aardvark.databinding
 
 import android.content.res.ColorStateList
-import android.databinding.BindingAdapter
-import android.support.annotation.ColorInt
-import android.support.v4.graphics.drawable.DrawableCompat
+import androidx.databinding.BindingAdapter
+import androidx.annotation.ColorInt
+import androidx.core.graphics.drawable.DrawableCompat
 import android.widget.Switch
 
 object SwitchDataBindingAdapter {

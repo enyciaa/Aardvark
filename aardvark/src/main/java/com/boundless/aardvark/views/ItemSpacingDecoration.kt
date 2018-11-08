@@ -1,7 +1,7 @@
 package com.boundless.aardvark.views
 
 import android.graphics.Rect
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import com.boundless.jerboa.ui.Orientation
 
@@ -15,13 +15,13 @@ class ItemSpacingDecoration(
 ) : RecyclerView.ItemDecoration() {
 
   override fun getItemOffsets(
-      outRect: Rect,
-      view: View,
-      parent: RecyclerView,
-      state: RecyclerView.State?
+          outRect: Rect,
+          view: View,
+          parent: RecyclerView,
+          state: RecyclerView.State
   ) {
     val itemPosition = parent.getChildAdapterPosition(view)
-    if (itemPosition < parent.adapter.itemCount - 1) {
+    if (itemPosition < parent.adapter!!.itemCount - 1) {
       when (orientation) {
         Orientation.HORIZONTAL -> outRect.right = space
         Orientation.VERTICAL -> outRect.bottom = space

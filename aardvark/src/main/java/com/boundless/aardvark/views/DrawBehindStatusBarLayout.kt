@@ -1,7 +1,7 @@
 package com.boundless.aardvark.views
 
 import android.content.Context
-import android.support.design.widget.CoordinatorLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import android.util.AttributeSet
 
 /**
@@ -12,7 +12,7 @@ class DrawBehindStatusBarLayout @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : CoordinatorLayout(context, attrs, defStyleAttr) {
+) : androidx.coordinatorlayout.widget.CoordinatorLayout(context, attrs, defStyleAttr) {
 
   init {
     this.fitsSystemWindows = true

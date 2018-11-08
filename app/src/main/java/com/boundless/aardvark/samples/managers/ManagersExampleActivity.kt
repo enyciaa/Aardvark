@@ -1,6 +1,6 @@
 package com.boundless.aardvark.samples.managers
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.boundless.aardvark.platform.ToastAnnouncer
 import com.boundless.jerboa.platform.Announcer
 

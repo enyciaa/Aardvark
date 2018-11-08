@@ -1,7 +1,7 @@
 package com.boundless.aardvark.samples.providers
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.boundless.aardvark.platform.ResourceProviderImpl
 import com.boundless.aardvark.samples.R
 import com.boundless.jerboa.platform.ResourceProvider

@@ -2,7 +2,7 @@ package com.boundless.aardvark.samples.engagement
 
 import android.app.NotificationChannel
 import android.content.Context
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import com.boundless.aardvark.engagement.SystemNotificationChannel
 
 @RequiresApi(26)

@@ -3,7 +3,7 @@ package com.boundless.aardvark.canvas
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
-import android.support.annotation.CallSuper
+import androidx.annotation.CallSuper
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View

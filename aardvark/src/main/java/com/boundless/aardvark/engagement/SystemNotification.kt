@@ -6,8 +6,8 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
-import android.support.annotation.RequiresApi
-import android.support.v4.app.NotificationCompat
+import androidx.annotation.RequiresApi
+import androidx.core.app.NotificationCompat
 import com.boundless.aardvark.extensions.getBitmap
 import com.boundless.aardvark.extensions.getColorCompat
 import com.boundless.aardvark.extensions.isMarshmellowOrAbove

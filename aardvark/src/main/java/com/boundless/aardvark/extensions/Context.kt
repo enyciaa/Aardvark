@@ -2,7 +2,7 @@ package com.boundless.aardvark.extensions
 
 import android.content.Context
 import android.content.res.Configuration
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.inputmethod.InputMethodManager
 
 fun Context.isLandscape(): Boolean {

@@ -1,9 +1,9 @@
 package com.boundless.aardvark.samples.inputfilters
 
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.text.InputFilter
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.boundless.aardvark.inputfilters.CharacterInputFilter
 import com.boundless.aardvark.samples.R
 import com.boundless.aardvark.samples.databinding.ActivityInputfiltersBinding

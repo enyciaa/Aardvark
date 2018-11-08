@@ -1,19 +1,19 @@
 package com.boundless.aardvark.adapters
 
-import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import android.view.View
 import android.view.ViewGroup
 import java.util.*
 
-class ViewPageAdapter : PagerAdapter() {
+class ViewPageAdapter : androidx.viewpager.widget.PagerAdapter() {
 
   private val views = ArrayList<View>()
 
   override fun getItemPosition(`object`: Any): Int {
     val index = views.indexOf(`object`)
     return if (index == -1)
-      PagerAdapter.POSITION_NONE
+      androidx.viewpager.widget.PagerAdapter.POSITION_NONE
     else
       index
   }
@@ -48,13 +48,13 @@ class ViewPageAdapter : PagerAdapter() {
     return position
   }
 
-  fun removeView(pager: ViewPager, v: View): Int {
+  fun removeView(pager: androidx.viewpager.widget.ViewPager, v: View): Int {
     val position = removeView(pager, views.indexOf(v))
     notifyDataSetChanged()
     return position
   }
 
-  fun removeView(pager: ViewPager, position: Int): Int {
+  fun removeView(pager: androidx.viewpager.widget.ViewPager, position: Int): Int {
     pager.adapter = null
     views.removeAt(position)
     pager.adapter = this

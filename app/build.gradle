@@ -13,7 +13,7 @@ android {
         targetSdkVersion targetSdkVersionSet
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -33,9 +33,9 @@ dependencies {
     implementation project(':aardvark')
     implementation "com.github.enyciaa:Jerboa:${jerboaVersion}"
 
-    implementation "com.android.support:appcompat-v7:${androidSupportVersion}"
+    implementation "androidx.appcompat:appcompat:${appCompatVersion}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
-    kapt "com.android.databinding:compiler:${gradlePluginVersion}"
+    kapt "androidx.databinding:databinding-compiler:${gradlePluginVersion}"
 
     // For some reason
     // The google services plugin defualts to firebase-core 11.4.2

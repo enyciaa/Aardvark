@@ -1,7 +1,7 @@
 package com.boundless.aardvark.samples.engagement
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.boundless.aardvark.extensions.isOreoOrAbove
 import com.boundless.aardvark.samples.R
 

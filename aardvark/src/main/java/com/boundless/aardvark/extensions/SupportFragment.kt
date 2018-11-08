@@ -1,6 +1,6 @@
 package com.boundless.aardvark.extensions
 
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 
-val Fragment.contextForced
+val androidx.fragment.app.Fragment.contextForced
     get() = context!!

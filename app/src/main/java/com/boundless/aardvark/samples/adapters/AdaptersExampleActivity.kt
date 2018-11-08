@@ -1,11 +1,11 @@
-package com.boundless.aardvark.adapters
+package com.boundless.aardvark.samples.adapters
 
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.boundless.aardvark.adapters.FragmentPageAdapter
+import com.boundless.aardvark.adapters.ViewPageAdapter
 import com.boundless.aardvark.samples.R
-import com.boundless.aardvark.samples.adapters.FragmentPage
-import com.boundless.aardvark.samples.adapters.ViewPage
 import com.boundless.aardvark.samples.databinding.ActivityAdaptersBinding
 
 class AdaptersExampleActivity : AppCompatActivity() {
