@@ -1,31 +1,30 @@
 ext {
     // Android
     minSdkVersionSet = '21'
-    targetSdkVersionSet = '27'
-    compileSdkVersionSet = 27
-    buildToolsVersionSet = '27.0.3'
-    androidSupportVersion = '27.1.1'
+    targetSdkVersionSet = '28'
+    compileSdkVersionSet = 28
+    buildToolsVersionSet = '28.0.3'
+    androidSupportVersion = '28.0.0'
 
     // Plugins
-    crashlyticsPluginVersion = '1.25.1'
-    playServicesPluginVersion = '3.2.0'
-    gradlePluginVersion = '3.1.2'
+    crashlyticsPluginVersion = '1.26.1'
+    playServicesPluginVersion = '4.2.0'
+    gradlePluginVersion = '3.2.1'
 
     // Personal libraries
-    jerboaVersion = "1.1.0"
+    jerboaVersion = "1.1.2"
 
     //Kotlin
-    kotlinVersion = '1.2.41'
+    kotlinVersion = '1.3.0'
 
     //Android code libraries
-    threeTenVersion = '1.0.5'
-    circleImageViewVersion = '2.2.0'
-    crashlyticsVersion = '2.9.4'
-    firebaseCore = '16.0.1'
-    daggerVersion = '2.15'
+    threeTenVersion = '1.1.1'
+    crashlyticsVersion = '2.9.6'
+    firebaseCore = '16.0.4'
+    daggerVersion = '2.19'
 
     //Android testing libraries
-    kluentVersion = '1.14'
+    kluentVersion = '1.15'
     junitVersion = '4.12'
-    mockkVersion = '1.7.17'
+    mockkVersion = '1.8.12'
 }
