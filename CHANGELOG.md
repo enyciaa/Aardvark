@@ -1,3 +1,8 @@
+# 1.3.1
+- Updates dependencies
+- Updates to kotlin 1.3
+- Migrates to androidx
+
 # 1.3.0
 - Disables advertising id in firebase
 
