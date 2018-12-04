@@ -35,7 +35,6 @@ dependencies {
 
     implementation "androidx.appcompat:appcompat:${appCompatVersion}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
-    kapt "androidx.databinding:databinding-compiler:${gradlePluginVersion}"
 
     // For some reason
     // The google services plugin defualts to firebase-core 11.4.2
