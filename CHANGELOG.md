@@ -1,3 +1,6 @@
+# 1.3.2
+- Removes kapt for databinding as this is now autoresolved
+
 # 1.3.1
 - Updates dependencies
 - Updates to kotlin 1.3
