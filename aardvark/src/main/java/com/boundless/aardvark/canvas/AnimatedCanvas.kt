@@ -3,6 +3,8 @@ package com.boundless.aardvark.canvas
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
+import android.os.Handler
+import android.os.Looper
 import androidx.annotation.CallSuper
 import android.util.AttributeSet
 import android.view.MotionEvent
@@ -25,6 +27,7 @@ abstract class AnimatedCanvas @JvmOverloads constructor(
 
   protected open val FRAME_RATE = 60
 
+  private val mainThreadHandler by lazy { Handler(Looper.getMainLooper()) }
   private var isInitialised: Boolean = false
   private val timer: Timer = Timer()
 
@@ -54,8 +57,10 @@ abstract class AnimatedCanvas @JvmOverloads constructor(
 
   inner class UpdateLoopTask : TimerTask() {
     override fun run() {
-      update()
-      triggerRedraw()
+      mainThreadHandler.post {
+        triggerRedraw()
+        update()
+      }
     }
   }
 

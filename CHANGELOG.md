@@ -1,3 +1,6 @@
+# 1.3.3
+- Fixes threading in TimerTask
+
 # 1.3.2
 - Removes kapt for databinding as this is now autoresolved
 
