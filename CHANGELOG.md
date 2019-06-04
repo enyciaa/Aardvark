@@ -1,3 +1,7 @@
+# 1.3.4
+- Makes animated canvas stoppable and restartable
+- Moves some canvas and canvas object methods, prefer extension functions.
+
 # 1.3.3
 - Fixes threading in TimerTask
 
