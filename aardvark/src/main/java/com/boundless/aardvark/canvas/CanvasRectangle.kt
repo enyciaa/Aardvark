@@ -21,8 +21,4 @@ abstract class CanvasRectangle(
     canvas.drawBitmap(bitmap, bounds.left, bounds.top, bounds.right, bounds.bottom)
     canvas.restore()
   }
-
-  fun isInBounds(coordinate: Coordinate): Boolean {
-    return bounds.isInBounds(coordinate)
-  }
 }
